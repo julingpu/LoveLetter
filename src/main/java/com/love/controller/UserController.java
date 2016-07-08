@@ -27,6 +27,8 @@ public class UserController {
 
     @RequestMapping(type = "post",url = "/sendLoginCodeByEmail")
     public void sendLoginCodeByEmail(String email){
+        System.out.print("1");
+
         List<String> recipients = new ArrayList<String>();
         recipients.add(email);
         try {
